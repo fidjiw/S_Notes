@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "122120248117",
+    "firebase_url": "https://fir-images-c6e19.firebaseio.com",
+    "project_id": "fir-images-c6e19",
+    "storage_bucket": "fir-images-c6e19.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:122120248117:android:4355b2292b33239826ca7c",
+        "android_client_info": {
+          "package_name": "com.example.atry"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "122120248117-pujh4mntf9vjig6mlc68ev89oshgmqkd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDedfRfruPQniGAaM24csFA0X0c2ljadUM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "122120248117-pujh4mntf9vjig6mlc68ev89oshgmqkd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:122120248117:android:b0086f383c452ac926ca7c",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "122120248117-pujh4mntf9vjig6mlc68ev89oshgmqkd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDedfRfruPQniGAaM24csFA0X0c2ljadUM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "122120248117-pujh4mntf9vjig6mlc68ev89oshgmqkd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:122120248117:android:2dc0233ebc75b1b826ca7c",
+        "android_client_info": {
+          "package_name": "com.xstudioo.simpledatabasedemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "122120248117-pujh4mntf9vjig6mlc68ev89oshgmqkd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDedfRfruPQniGAaM24csFA0X0c2ljadUM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "122120248117-pujh4mntf9vjig6mlc68ev89oshgmqkd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
