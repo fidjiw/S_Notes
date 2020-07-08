@@ -69,7 +69,7 @@ public class Edit extends AppCompatActivity {
         c = Calendar.getInstance();
         todaysDate = c.get(Calendar.YEAR)+"/"+(c.get(Calendar.MONTH)+1)+"/"+c.get(Calendar.DAY_OF_MONTH);
         Log.d("DATE", "Date: "+todaysDate);
-        currentTime = pad(c.get(Calendar.HOUR))+":"+pad(c.get(Calendar.MINUTE))+":"+pad(c.get(Calendar.SECOND));
+        currentTime = pad(c.get(Calendar.HOUR))+":"+pad(c.get(Calendar.MINUTE));
         Log.d("TIME", "Time: "+currentTime);
     }
 
@@ -96,9 +96,9 @@ public class Edit extends AppCompatActivity {
             long id = sDB.editNote(note);
             Log.d("EDITED", "EDIT: id " + id);
             goToMain();
-            Toast.makeText(this, "已更新内容", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Note Edited.", Toast.LENGTH_SHORT).show();
         }else if(item.getItemId() == R.id.delete){
-            Toast.makeText(this, "已删除", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Canceled", Toast.LENGTH_SHORT).show();
             onBackPressed();
         }
         return super.onOptionsItemSelected(item);

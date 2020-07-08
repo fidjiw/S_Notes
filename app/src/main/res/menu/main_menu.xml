@@ -3,16 +3,14 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/night_mode"
-        android:icon="@drawable/ic_baseline_nights_stay_24"
-        android:title="about"
-        app:showAsAction="ifRoom" />
+        android:id="@+id/app_bar_switch"
+        android:title="Switch"
+        app:actionLayout="@layout/switch_item"
+        app:showAsAction="always" />
 
     <item
         android:id="@+id/licenses"
         android:icon="@drawable/ic_baseline_contact_phone_24"
         android:title="about"
         app:showAsAction="ifRoom" />
-
-
 </menu>

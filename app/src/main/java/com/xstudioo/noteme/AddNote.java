@@ -29,7 +29,7 @@ public class AddNote extends AppCompatActivity {
         toolbar.setTitleTextColor(getResources().getColor(R.color.white));
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setTitle("New Note");
+        getSupportActionBar().setTitle("添加新笔记");
 
         noteDetails = findViewById(R.id.noteDetails);
         noteTitle = findViewById(R.id.noteTitle);
@@ -57,7 +57,7 @@ public class AddNote extends AppCompatActivity {
         c = Calendar.getInstance();
         todaysDate = c.get(Calendar.YEAR)+"/"+(c.get(Calendar.MONTH)+1)+"/"+c.get(Calendar.DAY_OF_MONTH);
         Log.d("DATE", "Date: "+todaysDate);
-        currentTime = pad(c.get(Calendar.HOUR))+":"+pad(c.get(Calendar.MINUTE))+":"+pad(c.get(Calendar.SECOND));
+        currentTime = pad(c.get(Calendar.HOUR))+":"+pad(c.get(Calendar.MINUTE));
         Log.d("TIME", "Time: "+currentTime);
 
     }
@@ -88,13 +88,13 @@ public class AddNote extends AppCompatActivity {
                 Log.d("inserted", "Note: "+ id + " -> Title:" + check.getTitle()+" Date: "+ check.getDate());
                 onBackPressed();
 
-                Toast.makeText(this, "已保存", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Note Saved.", Toast.LENGTH_SHORT).show();
             }else {
-                noteTitle.setError("标题不能为空");
+                noteTitle.setError("Title Can not be Blank.");
             }
 
         }else if(item.getItemId() == R.id.delete){
-            Toast.makeText(this, "已删除", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Canceled", Toast.LENGTH_SHORT).show();
             onBackPressed();
         }
         return super.onOptionsItemSelected(item);

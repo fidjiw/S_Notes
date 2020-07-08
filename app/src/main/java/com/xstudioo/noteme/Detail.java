@@ -1,7 +1,5 @@
 package com.xstudioo.noteme;
 
-import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -27,7 +25,6 @@ public class Detail extends AppCompatActivity {
         
         
 
-
         Intent i = getIntent();
         id = i.getLongExtra("ID",0);
         SimpleDatabase db = new SimpleDatabase(this);
@@ -41,37 +38,10 @@ public class Detail extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-
-                switch (view.getId()){
-                    case R.id.fab:
-                        AlertDialog.Builder dialog = new AlertDialog.Builder(Detail.this);
-                        dialog.setTitle("提示！");
-                        dialog.setMessage("确定删除吗？");
-                        dialog.setCancelable(false);
-                        dialog.setPositiveButton("确定", new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                                SimpleDatabase db = new SimpleDatabase(getApplicationContext());
-                                db.deleteNote(id);
-                                Toast.makeText(getApplicationContext(),"已删除内容！",Toast.LENGTH_SHORT).show();
-                                goToMain();
-                            }
-                        });
-                        dialog.setNegativeButton("取消", new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                                Toast.makeText(getApplicationContext(),"已取消删除！",Toast.LENGTH_SHORT).show();
-                            }
-                        });
-                        dialog.show();
-                        break;
-                    default:
-                        break;
-                }
-
-
-
+                SimpleDatabase db = new SimpleDatabase(getApplicationContext());
+                db.deleteNote(id);
+                Toast.makeText(getApplicationContext(),"Note Deleted",Toast.LENGTH_SHORT).show();
+                goToMain();
             }
         });
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
